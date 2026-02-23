@@ -1,48 +1,42 @@
-FinReg Navigator
+Here is your FinReg Navigator content formatted with professional Markdown styling. I’ve used clean headers, bold accents, and a clear structure to ensure it looks sharp on GitHub.
 
+Copy and paste the block below into your README.md file:
+
+🧭 FinReg Navigator
 AI-Powered Regulatory Intelligence Engine for Fintech & Digital Banking
-
 🚀 What It Is
+FinReg Navigator is a state-of-the-art Retrieval-Augmented Generation (RAG) system designed to help fintech companies navigate and assess regulatory compliance across multiple jurisdictions.
 
-FinReg Navigator is a Retrieval-Augmented Generation (RAG) system designed to help fintech companies assess regulatory compliance across multiple jurisdictions.
+It enables automated regulatory reasoning over structured legal corpora, including:
 
-It enables automated regulatory reasoning over structured legal corpora including:
+🇵🇰 Pakistan: SBP, FBR, and SRB frameworks.
 
-🇵🇰 Pakistan (SBP, FBR, SRB frameworks)
+🇦🇪 UAE: ADGM virtual asset framework.
 
-🇦🇪 UAE (ADGM virtual asset framework)
+🇬🇧 UK: FCA & EMI regulations.
 
-🇬🇧 UK (FCA & EMI regulations)
+💡 Why It Exists
+Fintech companies often struggle with complex, multi-jurisdictional hurdles. This tool simplifies:
 
-Why It Exists
+EMI Licensing Requirements & Digital Banking eligibility.
 
-Fintech companies often struggle with:
+AML/CFT Obligations across borders.
 
-EMI licensing requirements
+Taxation Compliance (Sales Tax, Finance Acts).
 
-Digital banking eligibility
-
-AML/CFT obligations
-
-Taxation compliance
-
-Cross-border expansion
-
-Regulatory comparison between jurisdictions
+Regulatory Comparison between different jurisdictions.
 
 FinReg Navigator allows compliance teams to query regulatory texts semantically and receive structured responses grounded in official regulatory documents.
 
-Example Use Cases
+🛠 Example Use Cases
 1️⃣ Pakistani EMI expanding to UAE
-
 Compare:
 
 SBP EMI Regulations 2023
 
 ADGM Virtual Asset Guidance
 
-2️⃣ New fintech entering Pakistan
-
+2️⃣ New Fintech entering Pakistan
 Evaluate:
 
 EMI capital requirements
@@ -51,8 +45,7 @@ Customer onboarding framework
 
 AML compliance obligations
 
-3️⃣ Tax impact analysis
-
+3️⃣ Tax Impact Analysis
 Assess:
 
 Finance Act 2025 amendments
@@ -61,21 +54,24 @@ Sales Tax Act 1990 updates
 
 Sindh Sales Tax on Services
 
-Architecture
+🏗 Architecture
+The system operates through a specialized Agentic Workflow:
 
-Intent Agent
-→ Retrieval Agent (ChromaDB + Embeddings)
-→ Web Agent (fallback if no strong semantic match)
-→ Final Answer Agent
+Intent Agent: Classifies the user's query.
 
-Tech stack:
+Retrieval Agent: Fetches context from ChromaDB using semantic embeddings.
 
-ChromaDB (Vector Store)
+Web Agent: Acts as a fallback if no strong semantic match is found in local docs.
 
-Sentence Transformers (MiniLM)
+Final Answer Agent: Synthesizes the final grounded response.
 
-Ollama (Local LLM)
+💻 Tech Stack
+Vector Store: ChromaDB
 
-LangGraph (Agent orchestration)
+Embeddings: Sentence Transformers (MiniLM)
 
-Streamlit (UI)
+LLM: Ollama (Local LLM)
+
+Orchestration: LangGraph
+
+UI: Streamlit
