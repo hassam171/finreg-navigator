@@ -1,7 +1,3 @@
-Here is your FinReg Navigator content formatted with professional Markdown styling. I’ve used clean headers, bold accents, and a clear structure to ensure it looks sharp on GitHub.
-
-Copy and paste the block below into your README.md file:
-
 🧭 FinReg Navigator
 AI-Powered Regulatory Intelligence Engine for Fintech & Digital Banking
 🚀 What It Is
