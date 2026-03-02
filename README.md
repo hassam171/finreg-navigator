@@ -63,15 +63,13 @@ The system operates through a specialized **Agentic Workflow**:
 
 
 ## Agent Roles
-```
+
 | Agent | Role |
 |---|---|
 | 🧠 **Intent Agent** | Classifies the user's query |
 | 🔍 **Retrieval Agent** | Fetches context from ChromaDB using semantic embeddings |
 | 🌐 **Web Agent** | Acts as a fallback if no strong semantic match is found in local docs |
 | ✅ **Final Answer Agent** | Synthesizes the final grounded response |
-
-```
 
 ---
 
