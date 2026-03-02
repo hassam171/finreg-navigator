@@ -59,6 +59,8 @@ Assess:
 
 The system operates through a specialized **Agentic Workflow**:
 
+![Architecture](assets/architecture.png)
+
 ```
 ┌─────────────────────────────────────────────────────────┐
 │                   FinReg Navigator Pipeline              │
@@ -84,6 +86,39 @@ The system operates through a specialized **Agentic Workflow**:
 
 ---
 
+## 💻 Demo
+
+### UI Example
+
+![UI Demo](assets/ui_demo.png)
+
+### Execution Trace
+
+![Execution Trace](assets/execution_trace.png)
+
+---
+
+## 🏗 Project Structure
+
+```
+finreg-navigator/
+│
+├── app/                # Streamlit UI
+├── src/
+│   ├── agents/         # Intent, Retrieval, Web, Final agents
+│   ├── ingest/         # PDF extraction, cleaning, chunking
+│   ├── rag/            # Embedding + retrieval logic
+│   ├── graph/          # LangGraph orchestration
+│   └── llm/            # Ollama clients
+│
+├── chromadb/           # Vector storage
+├── prompts/            # YAML prompt templates
+├── assets/             # Demo images
+└── README.md
+```
+
+---
+
 ## 💻 Tech Stack
 
 <div align="center">
@@ -92,7 +127,7 @@ The system operates through a specialized **Agentic Workflow**:
 |---|---|
 | 🗄️ **Vector Store** | ChromaDB |
 | 🔢 **Embeddings** | Sentence Transformers (MiniLM) |
-| 🤖 **LLM** | Ollama (Local LLM) |
+| 🤖 **LLM** | Ollama (Local LLM - Llama3 8B) |
 | 🔗 **Orchestration** | LangGraph |
 | 🖥️ **UI** | Streamlit |
 
