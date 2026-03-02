@@ -61,10 +61,9 @@ The system operates through a specialized **Agentic Workflow**:
 
 ![Architecture](assets/architecture.png)
 
----
-```
-## Agent Roles
 
+## Agent Roles
+```
 | Agent | Role |
 |---|---|
 | 🧠 **Intent Agent** | Classifies the user's query |
